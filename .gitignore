@@ -1,0 +1,5 @@
+node_modules
+
+# Secrets related to Google API
+credentials.json
+token.json
