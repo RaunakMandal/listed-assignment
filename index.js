@@ -29,6 +29,9 @@ let LOGGED_IN_USER = '';
  * @description - Removes the 'INBOX' label from the email
  * This is done so that the email is not visible in the inbox
  * and is only visible in the 'All Mail' section
+ * 
+ * HACK ALERT: This is a hacky way to remove the 'INBOX' label from the email
+ * so that we do not iterate over the same email again and again.
  */
 const removeInboxLabelFromThread = (gmail, threadId) => {
     gmail.users.threads.modify({
